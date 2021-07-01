@@ -2,6 +2,7 @@
 # Custom
 ############################
 config/**
+extensions/users-permissions/**
 
 ############################
 # OS X
