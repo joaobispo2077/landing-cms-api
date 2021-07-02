@@ -26,6 +26,15 @@
       "repeatable": true,
       "component": "menu.menu-links",
       "required": true
+    },
+    "logo_link": {
+      "type": "string",
+      "required": true
+    },
+    "open_in_new_tab": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
