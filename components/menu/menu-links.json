@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_menu_menu_links",
+  "info": {
+    "name": "menu_links",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
