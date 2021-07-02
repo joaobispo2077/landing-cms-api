@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "page"
+    "name": "page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,6 +22,15 @@
       "type": "uid",
       "required": true,
       "targetField": "title"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "section.section-two-columns",
+        "section.section-grid",
+        "section.section-content"
+      ],
+      "required": true
     }
   }
 }
