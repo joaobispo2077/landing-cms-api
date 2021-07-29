@@ -4,21 +4,8 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import styled from 'styled-components';
 
 const path = require('path');
-const root = path.resolve('./');
 
-
-const getDirectories = source =>
-  readdirSync(source, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name);
-
-console.log(getDirectories(root));
-
-const classicEditorPath = path.join(root, 'ckeditor5-custom', 'build', 'ckeditor.js');
-const { readdirSync } = require('fs')
-console.log('editor path: ', classicEditorPath);
-
-const ClassicEditor = require(classicEditorPath);
+import ClassicEditor from '../../../../../../ckeditor5-custom/build/ckeditor';
 
 const Wrapper = styled.div`
   .ck-editor__main {
