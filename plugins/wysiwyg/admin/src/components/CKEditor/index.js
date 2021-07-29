@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const path = require('path');
 const root = path.resolve('./');
-const classicEditorPath = path.resolve(root, 'ckeditor5-custom', 'build', 'ckeditor');
+const classicEditorPath = path.resolve(root, 'ckeditor5-custom', 'build', 'ckeditor.js');
 console.log('editor path: ', classicEditorPath);
 
 const ClassicEditor = require(classicEditorPath);
