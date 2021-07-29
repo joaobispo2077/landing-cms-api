@@ -7,6 +7,7 @@ const path = require('path');
 const root = path.resolve('./');
 
 
+const { readdirSync } = require('fs')
 const getDirectories = source =>
   readdirSync(source, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
@@ -15,7 +16,6 @@ const getDirectories = source =>
 console.log(getDirectories(root));
 
 const classicEditorPath = path.join(root, 'ckeditor5-custom', 'build', 'ckeditor.js');
-const { readdirSync } = require('fs')
 console.log('editor path: ', classicEditorPath);
 
 const ClassicEditor = require(classicEditorPath);
